@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="menu">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="students.html">Students</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="reports.html">Reports</a>
+  </nav>
+
+  <section class="form-container">
+    <h2>Add Student</h2>
+
+    <input id="sname" type="text" placeholder="Name">
+    <input id="sid" type="text" placeholder="Student ID">
+    <input id="sclass" type="text" placeholder="Class">
+    <input id="sface" type="text" placeholder="Face ID">
+    <input id="sqrcode" type="text" placeholder="QR Code">
+
+    <button class="neon-btn" onclick="addStudent()">Add Student</button>
+  </section>
+
+  <h3 style="text-align:center;">All Students</h3>
+  <div id="studentList" class="list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
